@@ -14,7 +14,6 @@ const Intro = () => {
         }
         setIsPlaying(!isPlaying)
     }
-
     return (
         <div style={{ position: 'relative' }}>
             <video
