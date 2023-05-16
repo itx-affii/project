@@ -17,9 +17,9 @@ const Intro = () => {
         setIsPlaying(!isPlaying)
     }
     return (
-        <div className='w-full h-screen'>
+        <div className='w-full'>
             <video
-                className={isMobile ? `h-fit w-full` : `w-screen h-fit`}
+                className={isMobile ? `h-fit w-[100%]` : `w-screen h-fit`}
                 src={isMobile ? finalMob : finalWeb}
                 autoPlay={false}
                 loop
