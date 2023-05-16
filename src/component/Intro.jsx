@@ -17,8 +17,7 @@ const Intro = () => {
         setIsPlaying(!isPlaying)
     }
     return (
-        <div className='w-full'>
-            <video
+        <video
                 className={isMobile ? `h-fit w-[100%]` : `w-screen h-fit`}
                 src={isMobile ? finalMob : finalWeb}
                 autoPlay={false}
@@ -26,21 +25,6 @@ const Intro = () => {
                 ref={videoRef}
                 onClick={handlePlayPauseClick}
             />
-            {/* <button
-                style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    backgroundColor: 'transparent',
-                    border: 'none',
-                    cursor: 'pointer',
-                }}
-                onClick={handlePlayPauseClick}
-            >
-                {isPlaying ? 'Pause' : 'Play'}
-            </button> */}
-        </div>
     )
 }
 
