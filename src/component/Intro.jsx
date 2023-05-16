@@ -17,9 +17,9 @@ const Intro = () => {
         setIsPlaying(!isPlaying)
     }
     return (
-        <div style={{ position: 'relative' }}>
+        <div className='w-full h-screen'>
             <video
-                className={isMobile ? `h-screen w-auto` : `w-screen h-fit`}
+                className={isMobile ? `h-fit w-full` : `w-screen h-fit`}
                 src={isMobile ? finalMob : finalWeb}
                 autoPlay={false}
                 loop
