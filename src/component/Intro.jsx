@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react'
-import { final } from '../constants'
+import { finalWeb, finalMob } from '../constants'
+import { isMobile } from 'react-device-detect'
+
 
 const Intro = () => {
     const videoRef = useRef(null)
@@ -18,7 +20,7 @@ const Intro = () => {
         <div style={{ position: 'relative' }}>
             <video
                 className='w-screen h-fit'
-                src={final}
+                src={isMobile ? finalMob : finalWeb}
                 autoPlay={false}
                 loop
                 ref={videoRef}

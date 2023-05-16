@@ -4,7 +4,7 @@ import { rainbow } from '../constants'
 const Navbar = () => {
     console.log(logo, "Logo")
     return (
-        <nav className="border-gray-200 bg-gray-50  fixed w-full z-50">
+        <nav className="border-gray-200 bg-gray-50  md:fixed w-full z-50">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" className="flex items-center">
                     <img src={logo} className="h-12 mr-3" alt="Flowbite Logo" />
@@ -19,7 +19,7 @@ const Navbar = () => {
                         style={{ fontFamily: "Glory", fontWeight: 600 }}
                     >
                         <li>
-                            <a href="#" className="block mt-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+                            <a href="#" className="block mt-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">HOME</a>
                         </li>
                         <li>
                             <a href="#" className="block mt-2 pl-3 pr-4 rounded hover:text-blue-500 md:border-0 md:p-0">STUDENTS</a>
