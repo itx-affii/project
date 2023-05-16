@@ -19,7 +19,7 @@ const Intro = () => {
     return (
         <div style={{ position: 'relative' }}>
             <video
-                className={isMobile ? `h-[1080px] w-auto` : `w-screen h-fit`}
+                className={isMobile ? `h-[1920px] w-[1080px]` : `w-screen h-fit`}
                 src={isMobile ? finalMob : finalWeb}
                 autoPlay={false}
                 loop
